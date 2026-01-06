@@ -1,0 +1,60 @@
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+display: block;
+  width: 100%; /* Of een vaste breedte */
+  height: auto;
+}
+
+
+.cirkel-bruin {
+position: absolute;
+background-color: rgba(83, 52, 32, 1);
+border-radius: 50%;
+height: 33%;
+width: 33%;
+top: 33%;
+  left: 33%;
+}
+.gebogen-tekst-bruin {
+  position: absolute;
+  /* top: 15px; */
+  /* left: 10px; */
+  /* right: 20px; */
+  bottom: -35px;
+  font-weight: bold;
+   font-size: 51px;
+
+}
+.gebogen-tekst-blauw {
+  position: absolute;
+
+  bottom: -150px;
+  font-weight: bold;
+   font-size: 20px;
+   rotate: 90deg;
+
+}
+.gebogen-tekst-blauw text {
+    fill: rgba(147, 197, 199, 1);
+}
+path {
+  fill: transparent;
+}
+.gebogen-tekst-bruin text {
+    fill: rgba(83, 52, 32, 1);
+}
+
+.cirkel-blauw {
+position: absolute;
+border-radius: 50%;
+background-color: rgba(147, 197, 199, 1);
+width: 7.5%;
+padding-bottom: 7.5%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
