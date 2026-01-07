@@ -42,7 +42,7 @@ display: flex;
   height: auto;
   display: block;
 }
-main {
+.main-index {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
@@ -53,7 +53,7 @@ margin-top: -80px;
   max-width: 1200px;
   margin: 0 auto; */
 }
-main p {
+.main-index p {
 font-size: 24px;
   max-width: 453px;
 text-align: center;
@@ -127,4 +127,85 @@ path {
   top: 50%;    /* Precies in het midden */
   left: 50%;   /* Precies in het midden */
   transform: translate(-50%, -50%);
+}
+.horizontal-card {
+  position: relative;
+  height: 350px;
+    border-radius: 30px;
+
+  width: 1250px;
+  background-image: url(Assets/de54eef1a3c6f640ab3c4aca0aafe4cb.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+  overflow: hidden;
+color: rgba(251, 229, 185, 1);
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  
+}
+.vertical-cards {
+  position: absolute;
+  top: 25%; 
+  left: 10;
+  width: 87.5%;
+  display: flex;
+  justify-content: space-around; 
+  gap: 30px; 
+  padding: 0 5%;
+}
+.vertical-card {
+position: relative; 
+  height: 400px;
+  flex: 0 1 350px;
+  background-color: rgba(247, 170, 92, 1);
+  border-radius: 30px; 
+  text-align: center;
+  color: rgba(83, 52, 32, 1);
+  overflow: hidden; 
+  z-index: 5;
+}
+.vertical-card img {
+ position: absolute;
+  bottom: -60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; 
+  height: auto;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
