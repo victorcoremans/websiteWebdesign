@@ -339,13 +339,15 @@ align-items: center;
   }
   .main-features {
     gap: 200px;
-    padding-right: 10%;
+    padding-right: 0%;
   }
   .vertical-card {
-    height: 25vh;
+    height: 20vh;
+    font-size: 12.5px;
+    padding: 5%;
   }
   .vertical-card img {
-    bottom: -50%;
+    bottom: -25%;
   }
   .horizontal-card {
     height: 25vh;
@@ -381,5 +383,26 @@ align-items: center;
     height: 20vh;
         width: 40vh;
   font-size: 10px;
+  }
+
+  .vertical-cards {
+     width: 80%;
+  }
+  .main-contact-us {
+    position: absolute;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+    padding: 20%;
+    /* bottom: -1%; */
+  }
+  .main-contact-us img, 
+  .contact {
+    width: 100%;            /* Beiden pakken de volle breedte van de iPhone */
+  }
+  .main-contact-us img {
+    height: 300px;          /* Geef de afbeelding een vaste hoogte zodat hij niet te lang wordt */
+    object-fit: cover;      /* Zorgt dat de platen mooi in het kader blijven */
   }
 }
