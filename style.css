@@ -5,6 +5,14 @@ body {
     overflow-x: hidden;
 
 }
+h1, a {
+    font-family: "myriad-pro", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+p, h4, form {
+  font-family: 'Poppins';
+}
 .menu-checkbox {
   display: none;
 }
@@ -18,7 +26,7 @@ body {
   display: block;
   width: 80%;
   height: auto;
-  margin: 0 auto; /* Zorg dat de plaat exact in het midden van de container staat */
+  margin: 0 auto; /
 }
 nav {
  
@@ -30,7 +38,7 @@ nav {
 .nav-links {
     text-decoration: none;
 display: flex;
-  /* Pas de gap aan om de tekst precies in de grid-banen te krijgen */
+
   gap: 75px;
   padding-right: 7.5%;
 
@@ -41,7 +49,7 @@ display: flex;
     color: rgba(83, 52, 32, 1);
 }
 .nav-img {
-  width: 5%; /* Geef het een duidelijke breedte om te testen */
+  width: 5%; 
   height: auto;
   display: block;
 }
@@ -49,12 +57,10 @@ display: flex;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  max-width: 100vw; /* Voorkom horizontaal scrollen */
+  max-width: 100vw; 
   overflow: hidden;
 margin-top: -80px;
-  /* gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto; */
+
 }
 .main-index p {
 font-size: 24px;
@@ -68,11 +74,11 @@ gap: 45px;}
   position: absolute;
   background-color: rgba(83, 52, 32, 1);
   border-radius: 50%;
-  height: 32.5%; /* Iets kleiner gemaakt om bij de plaat te passen */
+  height: 32.5%; 
   width: 27.5%; 
-  top: 50%;    /* Precies in het midden */
-  left: 50%;   /* Precies in het midden */
-  transform: translate(-50%, -50%); /* Dit zorgt voor perfecte centrering */
+  top: 50%;    
+  left: 50%;   
+  transform: translate(-50%, -50%); 
 }
 .gebogen-tekst-bruin {
   position: absolute;
@@ -87,14 +93,14 @@ width: 100%;
 }
 .gebogen-tekst-blauw {
   position: absolute;
-  top: 50%;    /* Precies in het midden */
-  left: 50%;   /* Precies in het midden */
-  width: 100%;  /* Moet even groot zijn als de bruine cirkel */
+  top: 50%;    
+  left: 50%;   
+  width: 100%;  
   height:47.5%;
-  /* De transform wordt al afgehandeld in de .links en .rechts klassen */
+
 }
 .gebogen-tekst-blauw text {
-  fill: rgba(147, 197, 199, 1);
+  fill: rgba(251, 229, 185, 1);
   font-size: 27.5px; 
 
 }
@@ -102,7 +108,7 @@ width: 100%;
   transform: translate(-50%, -50%) rotate(-360deg); 
 }
 
-/* De linkerkant (180 graden gedraaid t.o.v. rechts) */
+
 .gebogen-tekst-blauw.links  {
   transform: translate(-50%, -50%) rotate(-180deg); 
 
@@ -112,7 +118,6 @@ width: 100%;
 
 }
 
-/* De linkerkant (180 graden gedraaid t.o.v. rechts) */
 .gebogen-tekst-blauw.links text {
      letter-spacing: 12.5px;
 
@@ -128,16 +133,16 @@ path {
   position: absolute;
   border-radius: 50%;
   background-color: rgba(147, 197, 199, 1);
-  width: 6%;   /* Iets kleiner voor de verhouding */
+  width: 6%;   
   padding-bottom: 6%;
-  top: 50%;    /* Precies in het midden */
-  left: 50%;   /* Precies in het midden */
+  top: 50%;    
+  left: 50%;  
   transform: translate(-50%, -50%);
 }
 .feature-group {
-  position: relative; /* Dit zorgt dat de oranje kaarten bij HUN balk blijven */
+  position: relative; 
   width: 80%;
-margin: 0 auto;       /* Centreert de hele groep op de pagina */
+margin: 0 auto;      
   display: flex;
   justify-content: center;
   margin-top: -50px;
@@ -152,21 +157,21 @@ margin: 0 auto;       /* Centreert de hele groep op de pagina */
 .hamburger span {
 width: 30px;
   height: 4px;
-  background-color: rgba(83, 52, 32, 1); /* Je bruine kleur */
+  background-color: rgba(83, 52, 32, 1);
   border-radius: 2px;
 }
-/* De container die alle groepen onder elkaar zet */
+
 .main-features {
   display: flex;
   flex-direction: column;
-  gap: 350px; /* Verhoogd van 150px naar 350px */
+  gap: 350px;
   padding-top: 50px;
   padding-bottom: 150px;
 }
 .horizontal-card {
   position: relative;
   height: 40vh;
-  width:  100%; /* Gebruikt de 1250px van de groep */
+  width:  100%; 
   border-radius: 30px;
   display: flex;
   /* align-items: center; */
@@ -181,7 +186,7 @@ width: 30px;
 
 .vertical-cards {
   position: absolute;
-  top: 40%; /* Laat de kaarten over de rand van de bruine balk hangen */
+  top: 40%; 
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -207,20 +212,18 @@ position: relative;
   width: 50%; 
   height: auto;
 }
-/* Style inputs with type="text", select elements and textareas */
 input, select, textarea {
   padding: 12px; /* Some padding */ 
   border: 1px solid rgba(83, 52, 32, 1); 
   background-color: rgba(83, 52, 32, 1);
   color: rgba(251, 229, 185, 1);
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: rgba(83, 52, 32, 1);
   color: rgba(251, 229, 185, 1);
@@ -233,7 +236,7 @@ input[type=submit] {
     color: rgba(251, 229, 185, 1);
 
 }
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
    background-color: rgba(247, 170, 92, 1);
    color: rgba(83, 52, 32, 1);
@@ -287,9 +290,12 @@ align-items: center;
     margin-top: 5%;
     margin-right: 10%;
   }
+  .image-container {
+    /* height: 100vh; */
+  }
   .main-features {
     gap: 200px;
-    padding-right: 10%;
+    /* padding-right: 10%; */
   }
   .vertical-card {
     height: 25vh;
@@ -308,10 +314,10 @@ align-items: center;
     display: flex;
   }
   .nav-links {
-    display: none; /* Verberg menu standaard */
+    display: none; 
     flex-direction: column;
     position: relative;
-    top: 70px; /* Pas aan op basis van je nav hoogte */
+    top: 70px; 
     left: 0;
     width: 100%;
     background-color: rgba(251, 229, 185, 1);
@@ -331,7 +337,7 @@ align-items: center;
 
     grid-template-columns: 1fr;
     place-items: center;
-  justify-content: center; /* Horizontaal centreren van de tracks */
+  justify-content: center; 
   align-content: center;
      width: 100%;
      margin-top: -6%;
@@ -360,10 +366,10 @@ align-items: center;
     display: flex;
   }
   .nav-links {
-    display: none; /* Verberg menu standaard */
+    display: none; 
     flex-direction: column;
     position: relative;
-    top: 70px; /* Pas aan op basis van je nav hoogte */
+    top: 70px; 
     left: 0;
     width: 100%;
     background-color: rgba(251, 229, 185, 1);
@@ -399,10 +405,10 @@ align-items: center;
   }
   .main-contact-us img, 
   .contact {
-    width: 100%;            /* Beiden pakken de volle breedte van de iPhone */
+    width: 100%;            
   }
   .main-contact-us img {
-    height: 300px;          /* Geef de afbeelding een vaste hoogte zodat hij niet te lang wordt */
-    object-fit: cover;      /* Zorgt dat de platen mooi in het kader blijven */
+    height: 300px;          
+    object-fit: cover;      
   }
 }
